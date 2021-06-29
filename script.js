@@ -38,16 +38,31 @@ Le programme lui indique le grade correspondant :
     case 20: 
         result2.innerHTML = 'Excellent'; 
         break;
-    case (note >= 17 && note <= 19): 
+    case 19:
+    case 18:
+    case 17:
         result2.innerHTML = 'Très bien'; 
         break;
-    case (note >= 13 && note <= 16): 
+    case 16:
+    case 15:
+    case 14:
+    case 13:
+    case 11:
+    case 10:
         result2.innerHTML = 'Suffisant'; 
         break;
-    case (note >= 8 && note <= 9): 
+    case 9:
+    case 8: 
         result2.innerHTML = 'Insuffisant'; 
         break;
-    case (note >= 0 && note <= 7): 
+    case 7:
+    case 6:
+    case 5:
+    case 4:
+    case 3:
+    case 2:
+    case 1:
+    case 0:
         result2.innerHTML = 'Échec'; 
         break;
     default: 
@@ -58,8 +73,11 @@ Le programme lui indique le grade correspondant :
         break;
 }
 
-
    /*3) Réaliser un programme de gestion de date
  *******************************************
 L'utilisateur encode une date au format "DD-MM-YYYY".
 Vérifier si la date est valide et ensuite obtenir le jour de la semaine. */
+const result3 = document.getElementById('result3');
+const date = prompt('Encoder une date (DD-MM-YYYY)');
+
+result3.innerHTML = `${date} is valid. It's ${dayOfTheWeek}`; 
